@@ -10,8 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
 
     <link rel="stylesheet" href="../src/normalize.css">
-    <link rel="stylesheet" data-async="font.css">
     <style>
+      @font-face {
+        font-family: 'Fanwood Text';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Fanwood Text'), local('FanwoodText-Regular'), url(http://themes.googleusercontent.com/static/fonts/fanwoodtext/v4/hDNDHUlsSb8bgnEmDp4T_qRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+      }
+
       body {
         font-family: 'Fanwood Text', Georgia, serif;
         letter-spacing: 0.01rem;
@@ -71,11 +77,11 @@
       }
 
       [data-async] {
-          background-image: none !important;
+        background-image: none !important;
       }
     </style>
   </head>
-  <body>
+  <body data-async>
     <header>
       <div class="container">
         <h1 class="title">Work on tough challenges with an awesome team.</h1>
